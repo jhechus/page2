@@ -1,0 +1,497 @@
+$base: #060a01
+$sec: #494949
+$outline: #106eea
+$text: transparentize($sec, .5) 
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//Estilos generales
+
+a
+    margin:0px
+    padding:0px
+    @extend .tSlow
+    &:hover
+        color: $outline        
+
+h1,h2,h3,h4,h5,h6
+    color: $base
+    
+p
+    color:$sec
+
+.tSlow
+    -o-transition: all .5s ease-in-out
+    -webkit-transition: all .5s ease-in-out
+    transition: all .5s ease-in-out
+
+.pad_100
+    padding: 100px 0px
+
+.center
+    text-align: center
+    margin: 0px auto
+
+.main_title
+    font-size: 60px
+    font-weight: bold
+    color: $base
+    margin-bottom: 25px
+
+.margen
+    margin-bottom: 15px
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//Imagenes del sitio
+.rombo
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
+    &:hover
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)
+
+.rounded_circle
+    width: 250px
+    height: 250px
+    object-fit: cover
+    @extend .tSlow
+    @extend  .rombo
+    
+
+.diamante
+    display: block
+    position: relative
+    width: 95%
+    overflow: hidden
+    margin: 0px auto
+    background-size: 100%
+    background-position: center center
+    background-repeat: no-repeat
+    z-index: 10
+    @extend .tSlow
+    @extend .rombo
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//Estilos de barra de navegacion
+nav
+    width: 100%
+    //background-color: lighten(red, 40)
+    padding: 10px 0px
+    position: fixed
+    border-bottom: 1px solid transparent
+    z-index: 100
+    @extend .tSlow
+    //animacion del navbar del hover
+    &:hover
+        background-color: white
+        padding: 25px 0px
+        border: 1px solid transparentize($base, .9)
+        .logo
+            img
+                width: 45%
+            ul
+                margin-top: 8px
+                li
+                    a
+                        color: $text
+
+    ul
+        margin: 0px
+        margin-top: 0px
+        padding: 0px
+        text-align: right
+        @extend .tSlow
+        .link-active
+            a
+                color: $base !important
+                &::after
+                    width: 100%
+                    background-color: $base
+                    @extend .tSlow
+        
+        li
+            display: inline-block
+            padding: 0px 10px
+
+            a
+                position: relative
+                text-decoration: none
+                font-size: 16px
+                color: $text
+                @extend .tSlow
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    background-color: transparent
+                    height: 1px
+                    @extend .tSlow
+                &:after
+                    content: ''
+                    position: absolute
+                    top: 100%
+                    left: 0px
+                    width: 0%
+                    background-color: transparent
+                    height: 1px
+                    @extend .tSlow
+                &:hover
+                    text-decoration: none
+                    color: $base
+                    &::before
+                        width: 0%
+                        background-color: $base
+                    &::after
+                        width: 100%
+                        background-color: $base
+    
+                    
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+// slider altura de imagenes y de slider
+    
+#slider
+    .sy-box
+        height: 80vh //<--altura del slider
+        img
+            height: 80vh
+            //object-fit: cover
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+// Estilos de los input, botones, etc... del slider
+
+input, select, option, textarea
+    width: 100%
+    padding: 10px 15px
+    border: 1px solid $base
+    margin: 5px 0px
+    opacity: .5
+    @extend .tSlow
+    &:hover, &:focus
+        opacity: 1
+        color: $base
+
+textarea
+    max-width: 100%
+    min-width: 100%
+    min-height: 150px
+    max-height: 250px
+
+button
+    background-color: transparent
+    text-transform: uppercase
+    border: 1px solid $base
+    padding: 10px 20px
+    margin: 5px 0px
+    color: $base
+    font-size: 16px
+    letter-spacing: 1px
+    cursor: pointer
+    opacity: .7
+    @extend .tSlow
+    &:hover
+        opacity: 1
+        background-color: $base
+        color: white
+
+.black
+    background-color: $base
+    opacity: 1
+    color: white
+    &:hover
+        background-color: $outline
+        border: 1px solid $outline
+
+.nav_overlay
+    background-color: white
+    border-bottom: 1px solid transparentize($base, .9)
+    padding: 25px 0px
+    .logo
+        img
+            width: 70%
+    ul
+        margin-top: 8px 
+        li
+            a
+                color: $text
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+// estilos de slider
+
+#slider
+    backface-visibility: hidden
+    clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0% 100%, 0% 0%)
+
+#slippry
+    position: relative
+
+    h1,h2,,h3,h4,h5,h6,p,button,small,span
+        position: absolute
+    
+    p
+        width: 600px
+    .white_bg
+        background-color: transparentize(white, .4)
+        padding: 5px 10px
+    .left_title
+            left: 200px
+    .left
+        left: 200px
+    .right
+        right: 400px
+
+    .right_text
+        right: 160px
+    
+    .right_boton
+            right: 600px
+
+    .top_250
+        top: 250px
+    .top_300
+        top: 300px
+    .top_375
+        top: 375px
+    .top_400
+        top: 400px
+    .top_450
+        top: 450px
+
+    .midle_title
+        left: 40%
+        top: 40%
+
+    .midle
+        left: 35%
+        top: 45%
+
+    .midle_boton
+        left: 45%
+        top: 60%
+
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//// estilos responsive
+
+@media screen and (max-width: 600px)
+    #slippry
+        p
+            width: 320px
+        .left
+            left: 30px
+            
+
+        .left_title
+            left: 30px
+            background-color: transparentize(white, .4)
+
+        .right
+            right: 50px
+            background-color: transparentize(white, .4)
+
+        .right_text
+            right: 10px
+            background-color: transparentize(white, .4)
+
+        .right_boton
+            right: 190px
+
+        .top_250
+            top: 180px
+        .top_300
+            top: 230px
+        .top_375
+            top: 375px
+        .top_400
+            top: 390px
+        .top_450
+            top: 450px
+
+        .midle_title
+            left: 10%
+            top: 20%
+            background-color: transparentize(white, .4)
+
+        .midle
+            left: 10%
+            top: 25%
+            background-color: transparentize(white, .4)
+
+        .midle_boton
+            left: 10%
+            top: 48%
+    
+    ul
+        .link-active
+            a
+                width: 70px
+                float: right
+        
+    .diamante
+        display: none
+
+    footer
+        text-align: center
+        margin: 0 auto
+        .social_networks
+            i
+                position: relative
+                margin-left: 95px
+
+@media screen and (min-width: 601px) and (max-width: 1199px)
+    #slippry
+        p
+            width: 500px
+        
+        .left_title
+            left: 40px
+            background-color: transparentize(white, .4)
+
+        .left
+            left: 40px
+        .right
+            right: 220px
+
+        .right_text
+            right: 40px
+
+        .right_boton
+            right: 400px
+
+        .top_250
+            top: 250px
+        .top_300
+            top: 300px
+        .top_375
+            top: 375px
+        .top_400
+            top: 410px
+        .top_450
+            top: 450px
+
+        .midle_title
+            left: 33%
+            top: 40%
+            background-color: transparentize(white, .4)
+
+        .midle
+            left: 21%
+            top: 45%
+            background-color: transparentize(white, .4)
+
+        .midle_boton
+            left: 41%
+            top: 60%
+
+    ul
+        .link-active
+            a
+                width: 80px
+                float: right
+    
+    .diamante
+        display: none
+
+    footer
+        text-align: center
+        margin: 0 auto
+        .social_networks
+            i
+                position: relative
+                margin-left: 260px
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+//Footer y estilos
+
+footer    
+    margin-top: -60px
+    width: 100%
+    background-color: $base
+    padding: 70px 0px
+    clip-path: polygon(0% 10%, 50% 0%, 100% 10%, 100% 100%, 0% 100%)
+    p
+        margin: 0px
+        padding: 0px
+    .white
+        color: transparentize(white, .6)
+    ul
+        padding: 0%
+        margin: 0px
+        list-style: none
+        li
+            padding: 0px
+            margin: 0px
+            color: transparentize(white, .8)
+    hr
+        border-radius: 10px
+        background-color: transparentize(white, .92)
+
+    .insta
+        height: 100px
+        position: relative
+        float: left
+        margin: 0px
+        padding: 0px
+        width: 25%  //porcentaje varia dependiendo de las fotos, de insta para hacer el cambio
+        cursor: pointer
+        opacity: .7
+        @extend .tSlow
+        &:hover
+            opacity: 1
+    
+    .social_networks
+        margin-top: 5px
+        li
+            display: inline-block
+            position: relative 
+            margin: 0px 7px
+            float: left
+            width: 30px
+            height: 30px
+            text-align: center
+            transform: rotate(0deg)
+            backface-visibility: hidden
+            cursor: pointer
+            @extend .tSlow
+            i
+                font-size:22px
+                color: transparentize(white, .8)
+                transform: rotate(0deg) translate(-3px, 3px)
+                backface-visibility: hidden
+                @extend .tSlow
+
+                
+                
+
+.copy
+    padding: 10px 0px
+    background-color: lighten($base,1)
+    text-align: left
+    p,a
+        margin: 0px
+        padding: 0px
+        color: transparentize(white, .7)
+    a
+        opacity: .5
+        color: $outline
+        @extend .tSlow
+        &:hover
+            opacity: 1
+            text-decoration: none
+
+
+
