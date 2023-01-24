@@ -350,6 +350,19 @@ button
                 position: relative
                 margin-left: 95px
 
+    #portafolio
+        .grid-item 
+            width: 33.33%  //basado en el numero de imagenes por fila, fila = 100%
+            margin-top: -110px
+            &:nth-child(4), &:nth-child(9), &:nth-child(14), &:nth-child(19),&:nth-child(24), &:nth-child(29)
+                margin-left: 63px
+            &:nth-child(6), &:nth-child(15)
+                margin-left: 0px
+            img
+                width: 100%
+                height: 260px
+                object-fit: cover
+
 @media screen and (min-width: 601px) and (max-width: 1199px)
     #slippry
         p
@@ -412,6 +425,25 @@ button
                 position: relative
                 margin-left: 260px
 
+    #portafolio
+        .grid-item 
+            width: 25%  //basado en el numero de imagenes por fila, fila = 100%
+            margin-top: -110px
+            &:nth-child(5), &:nth-child(12), &:nth-child(19), &:nth-child(26)
+                margin-left: 87px
+            &:nth-child(6), &:nth-child(15)
+                margin-left: 0px
+            img
+                width: 100%
+                height: 260px
+                object-fit: cover
+
+@media screen and (min-width: 1000px) and (max-width: 1199px)
+    #portafolio
+        .grid-item 
+            &:nth-child(5), &:nth-child(12), &:nth-child(19), &:nth-child(26)
+                margin-left: 10px !important
+ 
 /////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
@@ -513,17 +545,36 @@ footer
     overflow: hidden
     float: left
     position: relative
-    background-color: black
+    background-color: blue
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)
     cursor: pointer
     margin-top: -130px
+    @extend .tSlow
     &::before
+        content: ''
+        position: absolute
+        background-color: transparent
+        background-image: none
+        background-position: center center
+        width: 100%
+        height: 100%
         pointer-events: none
+        @extend .tSlow
     &:nth-child(6), &:nth-child(15)
         margin-left: 130px
     img
         width: 100% // mide el 100% del contenedor; El contenedor es del grit-item, que mide de ancho (width) 20%
         height: 260px
         object-fit: cover
-
+    &:hover
+        &::before
+            content: ''
+            position: absolute
+            background-color: transparentize($outline, .1)
+            background-image: url("../imagenes/mas.png")
+            background-repeat: no-repeat
+            background-size: 30%
+            background-position: center center
+            width: 100%
+            height: 100%
         

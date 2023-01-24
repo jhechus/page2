@@ -12,15 +12,10 @@ $(".grid-item").css({
 console.log(dn_width);
 
 
-/* agregar scroll a la barra de navegacion */
-var nav = document.querySelector('nav');
-window.addEventListener('scroll',function (){
-    if(window.pageYOffset > 500){
-        nav.classList.add("nav_overlay");
-    }else{
-        nav.classList.remove("nav_overlay");
-    }
-});
+lightbox.option({
+    'resizeDuration': 200,
+    'disableScrolling': true
+})
 
 
     
