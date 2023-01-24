@@ -76,7 +76,7 @@ nav {
 nav:hover {
   background-color: white;
   padding: 25px 0px;
-  border: 1px solid rgba(6, 10, 1, 0.1);
+  border-bottom: 1px solid rgba(6, 10, 1, 0.1);
 }
 nav:hover .logo img {
   width: 45%;
@@ -486,4 +486,39 @@ footer .social_networks li i {
 .copy a:hover {
   opacity: 1;
   text-decoration: none;
+}
+
+.grid {
+  width: 100%;
+  padding: 190px 0px;
+}
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 20%;
+  padding-bottom: 20%;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  background-color: black;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  cursor: pointer;
+  margin-top: -130px;
+}
+.grid-item::before {
+  pointer-events: none;
+}
+.grid-item:nth-child(6), .grid-item:nth-child(15) {
+  margin-left: 130px;
+}
+.grid-item img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
