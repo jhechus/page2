@@ -339,10 +339,10 @@ button:hover {
   }
   #portafolio .grid-item {
     width: 33.33%;
-    margin-top: -110px;
+    margin-top: -80px;
   }
   #portafolio .grid-item:nth-child(4), #portafolio .grid-item:nth-child(9), #portafolio .grid-item:nth-child(14), #portafolio .grid-item:nth-child(19), #portafolio .grid-item:nth-child(24), #portafolio .grid-item:nth-child(29) {
-    margin-left: 63px;
+    margin-left: 57px;
   }
   #portafolio .grid-item:nth-child(6), #portafolio .grid-item:nth-child(15) {
     margin-left: 0px;
@@ -576,4 +576,11 @@ footer .social_networks li i {
   background-position: center center;
   width: 100%;
   height: 100%;
+}
+
+.my-form {
+  color: #060a01;
+}
+.my-form .form-control {
+  border-radius: 0;
 }/*# sourceMappingURL=main.css.map */
