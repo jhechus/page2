@@ -38,6 +38,11 @@ p {
   margin-bottom: 15px;
 }
 
+.text_job {
+  display: flex;
+  align-items: center;
+}
+
 .rombo, .diamante, .rounded_circle {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -64,6 +69,13 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 10;
+}
+
+.img_trabajo {
+  width: 99%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
@@ -353,6 +365,15 @@ button:hover {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .img_trabajo {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 1199px) {
   #slippry p {
@@ -583,4 +604,29 @@ footer .social_networks li i {
 }
 .my-form .form-control {
   border-radius: 0;
+}
+
+.follow-us-container {
+  margin-top: 50px;
+  margin-top-margin-bottom: 50px;
+}
+.follow-us-container .follow-us {
+  font-size: 32px;
+  color: #060a01;
+}
+.follow-us-container .social-icon {
+  padding: 6px 6px;
+  font-size: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #777;
+  border-radius: 50%;
+  color: #777;
+  margin: 5px;
+}
+.follow-us-container .social-icon .social-icon:hover {
+  text-decoration: none;
+  color: #060a01;
+  border-color: #434343;
 }/*# sourceMappingURL=main.css.map */

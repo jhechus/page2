@@ -35,68 +35,41 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item"><a class="nav-link mx-2" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link mx-2" href="trabajos.html">Trabajos Recientes </a></li>
+                    <li class="nav-item  link-active"><a class="nav-link mx-2" href="trabajos.html">Trabajos Recientes </a></li>
                     <li class="nav-item"><a class="nav-link mx-2" href="portafolio.html">Portafolio</a></li>
-                    <li class="nav-item  link-active"><a class="nav-link mx-2" href="contacto.html"> Contacto </a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="contacto.html"> Contacto </a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Fin Navegacion -->
 
-    <!-- Contacto -->
+    <!-- Trabajos -->
     <div class="pad_100">
-        <div class="container">
-            <div><h1>Contactanos</h1></div>
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="googlemap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.501665109349!2d-99.1428368491123!3d19.433926045608743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92b5b005b95%3A0x4da8ca5798c532b7!2sTorre%20Latinoamericana%2C%20Eje%20Central%20L%C3%A1zaro%20C%C3%A1rdenas%202%2C%20Centro%20Hist%C3%B3rico%20de%20la%20Cdad.%20de%20M%C3%A9xico%2C%20Centro%2C%20Cuauht%C3%A9moc%2C%2006000%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1674675083798!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <br />
-                <div class="col-md-6">
-                    <form class="my-form">
-                        <h4> Nos pondremos en contacto lo mas pronto posible</h4>
-                        <br>
-                        <div class="form-group">
-                            <label for="form-name">Nombre</label>
-                            <input type="name" class="form-control" id="form-name" placeholder="Tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="form-email">Correo</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ejemplo: lorem@gmaol.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="form-subject">Celular</label>
-                            <input type="tel" class="form-control" id="form-subject" placeholder="Celular">
-                        </div>
-                        <div class="form-group">
-                            <label for="form-message">Tu mensaje:</label>
-                            <textarea class="form-control" id="form-message" placeholder="Mensaje"></textarea>
-                        </div>
-                        <button type="submit">Contact Us</button>                
-                    </form>
-                </div>
-            </div>
+        <div class="Recientes">
+            <h2 class="center main_title">Eventos <strong>Recientes</strong></h2>
         </div>
-        <div class="container follow-us-container">
-            <div class="text-center follow-us">
-                <h3>O</h3>
-                <h5>Escribenos a nuestras redes sociales</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="/imagenes/trabajo1.jpg" class="rounded-circle mx-auto img_trabajo" alt="">
+                </div>
+                <div class="col-xl-6 text_job">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius minima ipsum modi eos consectetur consequatur saepe aliquid animi, suscipit quibusdam. Nesciunt blanditiis ipsum ea cumque sint in, quis doloribus est quo. Quos mollitia minima animi esse architecto magnam debitis dolore, repellat nulla quisquam similique obcaecati harum cumque quas asperiores voluptate!</p>
+                </div>
             </div>
-
-            <br />
-            <div class="text-center">
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
+            <div class="margen"></div>
+            <div class="row">
+                <div class="col-xl-6 text_job">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius minima ipsum modi eos consectetur consequatur saepe aliquid animi, suscipit quibusdam. Nesciunt blanditiis ipsum ea cumque sint in, quis doloribus est quo. Quos mollitia minima animi esse architecto magnam debitis dolore, repellat nulla quisquam similique obcaecati harum cumque quas asperiores voluptate!</p>
+                </div>
+                <div class="col-xl-6">
+                    <img src="/imagenes/trabajo2.jpg" class="rounded-circle mx-auto img_trabajo" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <!-- Fin de Conatcto -->
+    <!-- Fin de Trabajos -->
    
     <!-- Footer-->
     <footer>
@@ -176,7 +149,7 @@
         /* agregar scroll a la barra de navegacion */
         var nav = document.querySelector('nav');
         window.addEventListener('scroll',function (){
-            if(window.pageYOffset > 70){
+            if(window.pageYOffset > 100){
                 nav.classList.add("nav_overlay");
             }else{
                 nav.classList.remove("nav_overlay");
