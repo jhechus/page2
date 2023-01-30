@@ -362,14 +362,15 @@ button
     #portafolio
         .grid-item 
             width: 33.33%  //basado en el numero de imagenes por fila, fila = 100%
-            margin-top: -80px
+            padding-bottom: 200px
+            margin-top: -80px !important
             &:nth-child(4), &:nth-child(9), &:nth-child(14), &:nth-child(19),&:nth-child(24), &:nth-child(29)
-                margin-left: 57px
+                margin-left: 57px !important
             &:nth-child(6), &:nth-child(15)
-                margin-left: 0px
+                margin-left: 0px !important
             img
-                width: 100%
-                height: 260px
+                width: 100% !important
+                height: 260px !important
                 object-fit: cover
     
     .img_trabajo
@@ -446,19 +447,21 @@ button
     #portafolio
         .grid-item 
             width: 25%  //basado en el numero de imagenes por fila, fila = 100%
-            margin-top: -110px
+            padding-bottom: 200px
+            margin-top: -110px !important
             &:nth-child(5), &:nth-child(12), &:nth-child(19), &:nth-child(26)
-                margin-left: 87px
+                margin-left: 87px !important
             &:nth-child(6), &:nth-child(15)
-                margin-left: 0px
+                margin-left: 0px !important
             img
-                width: 100%
-                height: 260px
+                width: 100% !important
+                height: 260px !important
                 object-fit: cover
 
 @media screen and (min-width: 1000px) and (max-width: 1199px)
     #portafolio
         .grid-item 
+            padding-bottom: 200px
             &:nth-child(5), &:nth-child(12), &:nth-child(19), &:nth-child(26)
                 margin-left: 10px !important
  
@@ -518,11 +521,12 @@ footer
             cursor: pointer
             @extend .tSlow
             i
-                font-size:22px
-                color: transparentize(white, .8)
-                transform: rotate(0deg) translate(-3px, 3px)
-                backface-visibility: hidden
-                @extend .tSlow
+                a
+                    font-size:22px
+                    color: transparentize(white, .8)
+                    transform: rotate(0deg) translate(-3px, 3px)
+                    backface-visibility: hidden
+                    @extend .tSlow
 
                 
                 

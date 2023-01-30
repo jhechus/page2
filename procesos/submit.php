@@ -7,14 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    echo "<pre>";
-    var_dump($_POST); 
-
-
-    ?>
-    <br>
-    <a href="../contacto.html">Regresar</a>
+    <a href="contacto.html">Regresar</a>
 </body>
 </html>
 

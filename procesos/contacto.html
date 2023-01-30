@@ -57,26 +57,26 @@
                 </div>
                 <br />
                 <div class="col-md-6">
-                    <form class="my-form">
+                    <form action="/procesos/submit.php" method="post" class="my-form">
                         <h4> Nos pondremos en contacto lo mas pronto posible</h4>
                         <br>
                         <div class="form-group">
                             <label for="form-name">Nombre</label>
-                            <input type="name" class="form-control" id="form-name" placeholder="Tu nombre">
+                            <input type="name" name="name" class="form-control" id="form-name" placeholder="Tu nombre">
                         </div>
                         <div class="form-group">
                             <label for="form-email">Correo</label>
-                            <input type="email" class="form-control" id="form-email" placeholder="Ejemplo: lorem@gmaol.com">
+                            <input type="email" name="email" class="form-control" id="form-email" placeholder="Ejemplo: lorem@gmaol.com">
                         </div>
                         <div class="form-group">
                             <label for="form-subject">Celular</label>
-                            <input type="tel" class="form-control" id="form-subject" placeholder="Celular">
+                            <input type="tel" name="celular" class="form-control" id="form-subject" placeholder="Celular">
                         </div>
                         <div class="form-group">
                             <label for="form-message">Tu mensaje:</label>
-                            <textarea class="form-control" id="form-message" placeholder="Mensaje"></textarea>
+                            <textarea class="form-control" name="mensaje" id="form-message" placeholder="Mensaje"></textarea>
                         </div>
-                        <button type="submit">Contact Us</button>                
+                        <button type="submit" name="submit">Contact Us</button>                
                     </form>
                 </div>
             </div>
@@ -89,8 +89,8 @@
 
             <br />
             <div class="text-center">
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
+                <a href="https://www.facebook.com"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
+                <a href="https://www.instagram.com"><ion-icon name="logo-instagram" class="social-icon"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
                 <a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a>
             </div>
@@ -105,14 +105,13 @@
                 <div class="col-xl-2">
                     <p class="white"><strong>Mapa del Sitio </strong></p>
                     <ul class="white">
-                        <li class="small">Inicio</li>
-                        <li class="small">Nosotros</li>
-                        <li class="small">Portafolio</li>
-                        <li class="small">Contacto</li>
+                        <li class="small"><a href="/procesos/index.html" class="text-reset text-decoration-none"> Inicio </a></li>
+                        <li class="small"><a href="/procesos/trabajos.html" class="text-reset text-decoration-none">Trabajos Recientes</a></li>
+                        <li class="small"><a href="/procesos/portafolio.html" class="text-reset text-decoration-none">Portafolio</a></li>
+                        <li class="small"><a href="/procesos/contacto.html" class="text-reset text-decoration-none">Contacto</a></li>
                         <hr>
-                        <li class="small">Servicios</li>
-                        <li class="small">Facturacion</li>
-                        <li class="small">Terminos y Condiciones</li>
+                        <li class="small"><a href="/procesos/index.html#nosotros" class="text-reset text-decoration-none">Nosotros</a></li>
+                        <li class="small"><a href="/procesos/index.html#servicios" class="text-reset text-decoration-none">Servicios</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-6">
@@ -137,10 +136,10 @@
                     <br>
                     <p class="white"><strong>Redes Sociales</strong></p>
                     <ul class="social_networks">
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i><a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></i></li>
+                        <li><i><a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></i></li>
+                        <li><i><a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a></i></li>
+                        <li><i><a href="#"><ion-icon name="logo-facebook" class="social-icon"></ion-icon></a></i></li>
                     </ul>
                 </div>
             </div>

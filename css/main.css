@@ -14,7 +14,7 @@ p {
   color: #494949;
 }
 
-.tSlow, .grid-item::before, .grid-item, .copy a, footer .social_networks li i, footer .social_networks li, footer .insta, button, input, select, option, textarea, nav ul li a:after, nav ul li a:before, nav ul li a, nav ul .link-active a::after, nav ul, nav, .diamante, .rounded_circle, a {
+.tSlow, .grid-item::before, .grid-item, .copy a, footer .social_networks li i a, footer .social_networks li, footer .insta, button, input, select, option, textarea, nav ul li a:after, nav ul li a:before, nav ul li a, nav ul .link-active a::after, nav ul, nav, .diamante, .rounded_circle, a {
   transition: all 0.5s ease-in-out;
 }
 
@@ -351,17 +351,18 @@ button:hover {
   }
   #portafolio .grid-item {
     width: 33.33%;
-    margin-top: -80px;
+    padding-bottom: 200px;
+    margin-top: -80px !important;
   }
   #portafolio .grid-item:nth-child(4), #portafolio .grid-item:nth-child(9), #portafolio .grid-item:nth-child(14), #portafolio .grid-item:nth-child(19), #portafolio .grid-item:nth-child(24), #portafolio .grid-item:nth-child(29) {
-    margin-left: 57px;
+    margin-left: 57px !important;
   }
   #portafolio .grid-item:nth-child(6), #portafolio .grid-item:nth-child(15) {
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
   #portafolio .grid-item img {
-    width: 100%;
-    height: 260px;
+    width: 100% !important;
+    height: 260px !important;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -441,22 +442,26 @@ button:hover {
   }
   #portafolio .grid-item {
     width: 25%;
-    margin-top: -110px;
+    padding-bottom: 200px;
+    margin-top: -110px !important;
   }
   #portafolio .grid-item:nth-child(5), #portafolio .grid-item:nth-child(12), #portafolio .grid-item:nth-child(19), #portafolio .grid-item:nth-child(26) {
-    margin-left: 87px;
+    margin-left: 87px !important;
   }
   #portafolio .grid-item:nth-child(6), #portafolio .grid-item:nth-child(15) {
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
   #portafolio .grid-item img {
-    width: 100%;
-    height: 260px;
+    width: 100% !important;
+    height: 260px !important;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
+  #portafolio .grid-item {
+    padding-bottom: 200px;
+  }
   #portafolio .grid-item:nth-child(5), #portafolio .grid-item:nth-child(12), #portafolio .grid-item:nth-child(19), #portafolio .grid-item:nth-child(26) {
     margin-left: 10px !important;
   }
@@ -519,7 +524,7 @@ footer .social_networks li {
           backface-visibility: hidden;
   cursor: pointer;
 }
-footer .social_networks li i {
+footer .social_networks li i a {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.2);
   transform: rotate(0deg) translate(-3px, 3px);
